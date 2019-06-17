@@ -29,8 +29,13 @@ public class StringUtilTest {
 	}
 	@Test
 	public void getperson() {
-		Person person=new Person(StringUtil.generateChineseName(), RandomUtil.random(1, 120), StringUtil.randomChineseString(140),new Date());
-		System.out.println(person);
+		
+		for(int i=0;i<10000;i++) {
+			Person person=new Person(StringUtil.generateChineseName(), RandomUtil.random(1, 120), StringUtil.randomChineseString(140),new Date());
+
+			System.out.println(person);
+		}
+		
 	}
 
 }
